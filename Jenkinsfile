@@ -17,7 +17,7 @@ pipeline {
       stage("Build image") {
             steps {
                 script {
-                    myapp = docker.build("masterarbeithhz/thesis:${env.BUILD_ID}")
+                    myapp = docker.build("fluppirt/pipelinetest:${env.BUILD_ID}")
                 }
             }
         }
